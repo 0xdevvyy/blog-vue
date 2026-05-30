@@ -1,1 +1,41 @@
 @import 'tailwindcss';
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.paper-texture {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 5px 5px;
+}
+
+/* doesn't vue has transition?  nahh you just need to call this class to animate it*/
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float-card {
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: rotate(-2deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-2deg) translateY(-10px);
+  }
+}
