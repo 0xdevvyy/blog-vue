@@ -1,3 +1,7 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
   <div>
     <!-- <p class="uppercase tracking-[0.2em] text-xs mb-5 text-zinc-700">
@@ -20,17 +24,23 @@
     </p>
 
     <div class="flex gap-4 mt-10">
-      <button
-        class="border-2 border-black px-8 py-3 uppercase tracking-[0.2em] text-sm hover:bg-black hover:text-[#e7e2d8] transition"
+      <RouterLink
+        to="/blog"
+        class="border-2 border-black px-8 py-3 uppercase tracking-[0.2em] text-sm hover:bg-black hover:text-[#e7e2d8] transition cursor-pointer"
       >
-        Read Journal
+        About Me
+      </RouterLink>
+
+      <button
+        class="uppercase tracking-[0.2em] text-sm hover:underline underline-offset-4 cursor-pointer"
+      >
+        <RouterLink to="/blog"> Archive </RouterLink>
       </button>
 
-      <button class="uppercase tracking-[0.2em] text-sm hover:underline underline-offset-4">
-        Archive
-      </button>
-      <button class="uppercase tracking-[0.2em] text-sm hover:underline underline-offset-4">
-        Blog
+      <button
+        class="uppercase tracking-[0.2em] text-sm hover:underline underline-offset-4 cursor-pointer"
+      >
+        <RouterLink to="/blog"> Blog </RouterLink>
       </button>
     </div>
   </div>
