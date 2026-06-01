@@ -11,7 +11,9 @@ import { RouterView } from 'vue-router'
       </nav>
     </div>
   </header> -->
-  <RouterView />
+  <div class="paper-texture text-black min-h-screen">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped></style>
