@@ -4,7 +4,7 @@ body {
 }
 
 .paper-texture {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.23) 1px, transparent 1px);
   background-size: 5px 5px;
 }
 
